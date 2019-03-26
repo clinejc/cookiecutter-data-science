@@ -3,7 +3,8 @@
 _A logical, reasonably standardized, but flexible project structure for doing and sharing data science work._
 
 
-#### [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
+#### [Project homepage](https://github.com/clinejc/cookiecutter-data-science)
+This fork of the [Data Science Cookiecutter]http://drivendata.github.io/cookiecutter-data-science/) project extends the that project to add support for R.
 
 
 ### Requirements to use the cookiecutter template:
@@ -89,6 +90,14 @@ The directory structure of your new project looks like this:
 │
 └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 ```
+
+## Adding support for R
+The easiest way to enable support for R is to use [RStudio](https://www.rstudio.com/products/rstudio/download/) to open a new R project on the data science project directory and then use the menu "Tools->Project Options:Packrat"  to navigate to Packrat options and enable Packrat for this project by selecting the checkbox "Enable Packrat with this project".
+
+The following R packages are recommended:
+
+- packrat
+- dotenv
 
 ## Contributing
 
