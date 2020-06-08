@@ -39,6 +39,7 @@ $ conda install cookiecutter
 The directory structure of your new project looks like this: 
 
 ```
+├── .Rprofile          <- Used to activate `renv` for new R sessions launched in the project.
 ├── LICENSE
 ├── Makefile           <- Makefile with commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
@@ -56,17 +57,17 @@ The directory structure of your new project looks like this:
 │                         the creator's initials, and a short `-` delimited description, e.g.
 │                         `1.0-jqp-initial-data-exploration`.
 │
-├── packrat            <- Reproducible package management for R
-│   ├── packrat.lock   <- The R requirements file for reproducing the analysis environment (see
-│   │                     requirements.txt, for Python requirements).
-│   └── packrat.opts   <- Project options for Packrat
-|
 ├── R                  <- R package
 |
 ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
 │
 ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
 │   └── figures        <- Generated graphics and figures to be used in reporting
+│
+├── renv               <- Reproducible package management for R
+│   └── activate.R     <- The activation script run by the project `.Rprofile`.
+│
+├── renv.lock          <- Reproducible package management for R
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
